@@ -33,6 +33,11 @@ const listingSchema = new mongoose.Schema({
             type: [Number],
             required: true
         }
+    },
+    category: {
+        type: [String],
+        enum: ["Trending","Rooms","Iconic cities","Mountains","Castles","Amazing pools","Camping","Farms","Arctic","Golfing","Ski","Beach"],
+        required: true
     }
 });
 // handling deletion

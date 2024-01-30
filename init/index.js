@@ -3,7 +3,7 @@ const initData = require("./data.js");
 const Listing = require("../models/listing.js");
 
 async function main(){
-    await mongoose.connect("mongodb://127.0.0.1:27017/wanderlust")
+    await mongoose.connect("mongodb+srv://animesh_03:xQF8OFD395tjPZXq@cluster0.lse0fhh.mongodb.net/?retryWrites=true&w=majority")
 }
 main().then(() => console.log("database connected"))
 .catch((err)=> {console.log(err)});

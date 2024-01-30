@@ -14,6 +14,7 @@ const sampleListings = [
         type: "Point",
         coordinates: [-118.7798, 34.0259]
       },
+      category: ["Trending","Rooms"]
     },
     {
       title: "Modern Loft in Downtown",
@@ -30,6 +31,7 @@ const sampleListings = [
         type: "Point",
         coordinates: [-74.0060, 40.7128]
       },
+      category: ["Trending","Rooms"]
     },
     {
       title: "Mountain Retreat",
@@ -46,6 +48,7 @@ const sampleListings = [
         type: "Point",
         coordinates: [-106.8175, 39.1911]
       },
+      category: ["Mountains","Amazing pools","Rooms"]
     },
     {
       title: "Historic Villa in Tuscany",
@@ -62,6 +65,7 @@ const sampleListings = [
         type: "Point",
         coordinates: [11.2558, 43.7696]
       },
+      category: ["Iconic cities"]
     },
     {
       title: "Secluded Treehouse Getaway",
@@ -78,6 +82,7 @@ const sampleListings = [
         type: "Point",
         coordinates: [-122.6750, 45.5051]
       },
+      category: ["Trending","Camping"]
     },
     {
       title: "Beachfront Paradise",
@@ -94,6 +99,7 @@ const sampleListings = [
         type: "Point",
         coordinates: [-86.8515, 21.1619]
       },
+      category: ["Beach","Camping"]
     },
     {
       title: "Rustic Cabin by the Lake",
@@ -110,6 +116,7 @@ const sampleListings = [
         type: "Point",
         coordinates: [-120.0324, 39.0968]
       },
+      category: ["Camping","Mountains"]
     },
     {
       title: "Luxury Penthouse with City Views",
@@ -126,6 +133,7 @@ const sampleListings = [
         type: "Point",
         coordinates: [-118.2437, 34.0522]
       },
+      category: ["Iconic cities","Rooms"]
     },
     {
       title: "Ski-In/Ski-Out Chalet",
@@ -142,6 +150,7 @@ const sampleListings = [
         type: "Point",
         coordinates: [7.2284, 46.0964]
       },
+      category: ["Ski"]
     },
     {
       title: "Safari Lodge in the Serengeti",
@@ -158,6 +167,7 @@ const sampleListings = [
         type: "Point",
         coordinates: [34.6857, -2.1540]
       },
+      category: ["Trending","Camping"]
     },
     {
       title: "Historic Canal House",
@@ -174,6 +184,7 @@ const sampleListings = [
         type: "Point",
         coordinates: [4.9041, 52.3676]
       },
+      category: ["Iconic cities"]
     },
     {
       title: "Private Island Retreat",
@@ -190,6 +201,7 @@ const sampleListings = [
         type: "Point",
         coordinates: [178.0650, -17.7134]
       },
+      category: ["Trending","Camping","Farms"]
     },
     {
       title: "Charming Cottage in the Cotswolds",
@@ -206,6 +218,7 @@ const sampleListings = [
         type: "Point",
         coordinates: [-1.7204, 51.9294]
       },
+      category: ["Beach","Rooms"]
     },
     {
       title: "Historic Brownstone in Boston",
@@ -222,6 +235,7 @@ const sampleListings = [
         type: "Point",
         coordinates: [-71.0589, 42.3601]
       },
+      category: ["Trending","Iconic cities","Rooms"]
     },
     {
       title: "Beachfront Bungalow in Bali",
@@ -238,6 +252,7 @@ const sampleListings = [
         type: "Point",
         coordinates: [115.1889, -8.4095]
       },
+      category: ["Beach","Amazing pools"]
     },
     {
       title: "Mountain View Cabin in Banff",
@@ -254,6 +269,7 @@ const sampleListings = [
         type: "Point",
         coordinates: [-115.5708, 51.1784]
       },
+      category: ["Mountains","Camping"]
     },
     {
       title: "Art Deco Apartment in Miami",
@@ -270,6 +286,7 @@ const sampleListings = [
         type: "Point",
         coordinates: [-80.1918, 25.7617]
       },
+      category: ["Beach","Rooms"]
     },
     {
       title: "Tropical Villa in Phuket",
@@ -286,6 +303,7 @@ const sampleListings = [
         type: "Point",
         coordinates: [98.3923, 7.8804]
       },
+      category: ["Mountains","Amazing pools"]
     },
     {
       title: "Historic Castle in Scotland",
@@ -302,6 +320,7 @@ const sampleListings = [
         type: "Point",
         coordinates: [-4.4659, 57.2887]
       },
+      category: ["Trending","Castles"]
     },
     {
       title: "Desert Oasis in Dubai",
@@ -318,6 +337,7 @@ const sampleListings = [
         type: "Point",
         coordinates: [55.2962, 25.2769]
       },
+      category: ["Camping","Amazing pools","Trending"]
     },
     {
       title: "Rustic Log Cabin in Montana",
@@ -334,6 +354,7 @@ const sampleListings = [
         type: "Point",
         coordinates: [-110.3626, 46.8797]
       },
+      category: ["Camping","Mountains"]
     },
     {
       title: "Beachfront Villa in Greece",
@@ -350,6 +371,7 @@ const sampleListings = [
         type: "Point",
         coordinates: [25.3289, 37.4467]
       },
+      category: ["Rooms","Beach"]
     },
     {
       title: "Eco-Friendly Treehouse Retreat",
@@ -366,6 +388,7 @@ const sampleListings = [
         type: "Point",
         coordinates: [-83.7534, 9.7489]
       },
+      category: ["Trending","Camping"]
     },
     {
       title: "Historic Cottage in Charleston",
@@ -382,6 +405,7 @@ const sampleListings = [
         type: "Point",
         coordinates: [-79.9311, 32.7765]
       },
+      category: ["Mountains","Farms"]
     },
     {
       title: "Modern Apartment in Tokyo",
@@ -398,6 +422,7 @@ const sampleListings = [
         type: "Point",
         coordinates: [139.6917, 35.6895]
       },
+      category: ["Iconic cities","Trending","Rooms"]
     },
     {
       title: "Lakefront Cabin in New Hampshire",
@@ -414,6 +439,7 @@ const sampleListings = [
         type: "Point",
         coordinates: [-71.5724, 43.1939]
       },
+      category: ["Camping","Mountains"]
     },
     {
       title: "Luxury Villa in the Maldives",
@@ -430,6 +456,7 @@ const sampleListings = [
         type: "Point",
         coordinates: [73.2207, 3.2028]
       },
+      category: ["Beach","Rooms"]
     },
     {
       title: "Ski Chalet in Aspen",
@@ -446,6 +473,7 @@ const sampleListings = [
         type: "Point",
         coordinates: [-106.8175, 39.1911]
       },
+      category: ["Ski"]
     },
     {
       title: "Secluded Beach House in Costa Rica",
@@ -462,6 +490,7 @@ const sampleListings = [
         type: "Point",
         coordinates: [-84.087502, 9.934739]
       },
+      category: ["Beach","Rooms","Trending"]
     },
   ];
   
