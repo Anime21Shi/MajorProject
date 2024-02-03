@@ -22,21 +22,39 @@
                     <input type="file" name="listing[image]" id="image" class="form-control">
                 </div>
                 <br>
+                <div>
+                    <label class="form-label">Category : </label>
+                    <select name="listing[category]" class="form-select" id="filters" multiple required>
+                        <option value="Trending">Trending</option>
+                        <option value="Rooms">Rooms</option>
+                        <option value="Iconic cities">Iconic cities</option>
+                        <option value="Mountains">Mountains</option>
+                        <option value="Castles">Castles</option>
+                        <option value="Amazing pools">Amazing pools</option>
+                        <option value="Camping">Camping</option>
+                        <option value="Farms">Farms</option>
+                        <option value="Arctic">Arctic</option>
+                        <option value="Golfing">Golfing</option>
+                        <option value="Ski">Ski-in/out</option>
+                        <option value="Beach">Beach</option>
+                    </select>
+                    <div class="invalid-feedback">Please specify a valid category.</div>
+                </div>
+                <br>
                 <div class="row">
                     <div class="col-md-4">
                         <label for="price" class="form-label">Pricing : </label>
                         <input type="number" placeholder="enter price" name="listing[price]" id="price" class="form-control" required>
                         <div class="invalid-feedback">Please enter a valid price.</div>
                     </div>
-                    <br>
+                    
                     <div class="col-md-8">
                         <label for="cont" class="form-label">Country : </label>
                         <input type="text" placeholder="enter country" name="listing[country]" id="cont" class="form-control" required>
                         <div class="invalid-feedback">Please enter a valid country name.</div>
                     </div>
-                    <br>
                 </div>
-                
+                <br>
                 <div>
                     <label for="loc" class="form-label">Location : </label>
                     <input type="text" placeholder="enter location" name="listing[location]" id="loc" class="form-control" required>
@@ -47,4 +65,7 @@
             </form>
         </div>
     </div>
+    <script>
+        new MultiSelectTag('filters')  // id of dropdown list
+    </script>
     <script src="/js/script.js"></script>

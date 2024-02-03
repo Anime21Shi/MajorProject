@@ -88,7 +88,7 @@ main().then(()=> console.log("database connected"))
 app.listen(8080,() => {
     console.log("app is listening at port 8080");
 });
-
+// local DB : 'mongodb://127.0.0.1:27017/wanderlust'
 // app.get("/",(req,res) => {
 //     res.send("Hi, I am root");
 // });

@@ -95,3 +95,171 @@ module.exports.destroyListing = async(req,res)=>{
     req.flash("success","Listing Deleted!");
     res.redirect("/listings");
 };
+
+module.exports.trendingLists = async(req,res) => {
+    const Listings = await Listing.find({});
+    let allListings = new Array();
+    for(listing of Listings){
+        let category = listing.category;
+        for (let i = 0; i < category.length; i++) {
+            if(category[i] == "Trending"){
+                allListings.push(listing);
+            }
+        }
+    }
+    res.render("index.ejs",{allListings});
+};
+
+module.exports.filterRooms = async(req,res) => {
+    const Listings = await Listing.find({});
+    let allListings = new Array();
+    for(listing of Listings){
+        let category = listing.category;
+        for (let i = 0; i < category.length; i++) {
+            if(category[i] == "Rooms"){
+                allListings.push(listing);
+            }
+        }
+    }
+    res.render("index.ejs",{allListings});
+};
+
+module.exports.filterIconicCities = async(req,res) => {
+    const Listings = await Listing.find({});
+    let allListings = new Array();
+    for(listing of Listings){
+        let category = listing.category;
+        for (let i = 0; i < category.length; i++) {
+            if(category[i] == "Iconic cities"){
+                allListings.push(listing);
+            }
+        }
+    }
+    res.render("index.ejs",{allListings});
+};
+
+module.exports.filterMountains = async(req,res) => {
+    const Listings = await Listing.find({});
+    let allListings = new Array();
+    for(listing of Listings){
+        let category = listing.category;
+        for (let i = 0; i < category.length; i++) {
+            if(category[i] == "Mountains"){
+                allListings.push(listing);
+            }
+        }
+    }
+    res.render("index.ejs",{allListings});
+};
+
+module.exports.filterCastles = async(req,res) => {
+    const Listings = await Listing.find({});
+    let allListings = new Array();
+    for(listing of Listings){
+        let category = listing.category;
+        for (let i = 0; i < category.length; i++) {
+            if(category[i] == "Castles"){
+                allListings.push(listing);
+            }
+        }
+    }
+    res.render("index.ejs",{allListings});
+};
+
+module.exports.filterPools = async(req,res) => {
+    const Listings = await Listing.find({});
+    let allListings = new Array();
+    for(listing of Listings){
+        let category = listing.category;
+        for (let i = 0; i < category.length; i++) {
+            if(category[i] == "Amazing pools"){
+                allListings.push(listing);
+            }
+        }
+    }
+    res.render("index.ejs",{allListings});
+};
+
+module.exports.filterCamping = async(req,res) => {
+    const Listings = await Listing.find({});
+    let allListings = new Array();
+    for(listing of Listings){
+        let category = listing.category;
+        for (let i = 0; i < category.length; i++) {
+            if(category[i] == "Camping"){
+                allListings.push(listing);
+            }
+        }
+    }
+    res.render("index.ejs",{allListings});
+};
+
+module.exports.filterFarms = async(req,res) => {
+    const Listings = await Listing.find({});
+    let allListings = new Array();
+    for(listing of Listings){
+        let category = listing.category;
+        for (let i = 0; i < category.length; i++) {
+            if(category[i] == "Farms"){
+                allListings.push(listing);
+            }
+        }
+    }
+    res.render("index.ejs",{allListings});
+};
+
+module.exports.filterArctic = async(req,res) => {
+    const Listings = await Listing.find({});
+    let allListings = new Array();
+    for(listing of Listings){
+        let category = listing.category;
+        for (let i = 0; i < category.length; i++) {
+            if(category[i] == "Arctic"){
+                allListings.push(listing);
+            }
+        }
+    }
+    res.render("index.ejs",{allListings});
+};
+
+module.exports.filterGolfing = async(req,res) => {
+    const Listings = await Listing.find({});
+    let allListings = new Array();
+    for(listing of Listings){
+        let category = listing.category;
+        for (let i = 0; i < category.length; i++) {
+            if(category[i] == "Golfing"){
+                allListings.push(listing);
+            }
+        }
+    }
+    res.render("index.ejs",{allListings});
+};
+
+module.exports.filterSki = async(req,res) => {
+    const Listings = await Listing.find({});
+    let allListings = new Array();
+    for(listing of Listings){
+        let category = listing.category;
+        for (let i = 0; i < category.length; i++) {
+            if(category[i] == "Ski"){
+                allListings.push(listing);
+            }
+        }
+    }
+    res.render("index.ejs",{allListings});
+};
+
+module.exports.filterBeach = async(req,res) => {
+    const Listings = await Listing.find({});
+    let allListings = new Array();
+    for(listing of Listings){
+        let category = listing.category;
+        for (let i = 0; i < category.length; i++) {
+            if(category[i] == "Beach"){
+                allListings.push(listing);
+            }
+        }
+    }
+    res.render("index.ejs",{allListings});
+};
